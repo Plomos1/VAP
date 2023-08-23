@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Visual Access Project</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="main_style.css">
+    </head>
+    <body>   
+        <header id="banner">
+            <div class="container">
+                <div id="banner_branding">
+                    <h1>VISUAL ACCESS PROJECT</h1>
+                    <h2>Visual Access Project</h2>
+                </div><nav id="nav_menu">
+                    <ul>
+                        <li class="tab_on">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="menu_list.html">Menu List</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>             
+                </nav>
+            </div>
+        </header>
+        <section id="main_content">
+            <div class="container">
+                <h3>Visual Access Project</h3>
+                <div class="main_content_text">
+                    <p>Welcome to the Visual Access Project. Here you will find menus for restaurants that have been put together in a format suitable for modern screen readers.</p>
+                    <p>If you want to learn more about the project check out our About page or go and have a look at the Menu List see what is available.</p>
+                    <br>
+                    <p>Don’t see your favorite place listed? Use our Contact page to send us a message about it so it can be added to the project.</p>
+                </div>
+                <div class="copyright">All content is copyright Visual Access Project 2018-2022. Menu data freely available from restaurants</div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <hr>
+                <h1>VISUAL ACCESS PROJECT</h1>
+                <div id="credit">Proudly powered by <a href="https://wordpress.org/" target="_blank"><u>Big Phil</u></a>.</div>
+            </div>
+        </footer>
+
+        <div id="light_mode" onclick="switchLightMode(this)">Dark Mode: On</div>
+
+        <script>
+            function switchLightMode(element) {
+                document.body.classList.toggle('light');
+                let buttonText = 'Dark Mode: ';
+                if (document.body.classList.contains('light')) {buttonText += 'Off';}
+                else {buttonText += 'On';}
+                element.innerHTML = buttonText;
+            }
+        </script>
+    </body>
+</html>
